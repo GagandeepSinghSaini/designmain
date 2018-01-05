@@ -1,0 +1,11 @@
+The Abstract Factory method provides an interface for creating families of related and dependent objects 
+without specifying their concrete classes.
+Example: 
+
+The Factory design pattern is used when we have asuper class with multiple sub-classes and based on input, we return object of one of the subclass.
+Example of Factory Method: Game, in which we have different levels. So, we keep different factories for different levels, 
+to create level instances.
+
+Design Principle:
+1. Dependency Inversion Principle (depend upon abstraction, do not depend upon concrete classes).
+

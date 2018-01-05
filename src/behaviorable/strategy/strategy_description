@@ -1,0 +1,10 @@
+Strategy Design Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.	
+Strategy lets the algoithms vary independently from clients that use it.
+
+Design Principles:
+1. Encapsulate what varies
+2. Program to interfaces, not to implementations
+3. Favor composition over inheritance
+
+In short, it is a good idea to isolate the algorithms in separate classes in order to have the ability to select different
+ algorithms at runtime. 
