@@ -1,0 +1,8 @@
+The Decorator Pattern is part of the structural design pattern and this is a pattern which attaches additional 
+responsibilities to an object dynamically.
+Its build on the design principle “Classes should be open for extension, but closed for modification.”
+
+The goal is to allow classes to be easily extended to incorporate new behavior without modifying existing code.  
+
+Design Principles:
+1. Open for Extension, but closed for modification

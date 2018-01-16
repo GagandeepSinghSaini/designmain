@@ -1,0 +1,19 @@
+Flyweight pattern is used when there is need to create a large number of objects of almost similar nature. 
+The large number of objects consume a large amount of memory and the Flyweight design pattern provides a solution for
+reducing the load on memory by sharing objects.
+
+It is achieved by segregating object properties into two types intrinsic[constants] and extrinsic[changable].
+
+---------------------Sharing is key in flyweight pattern-------------------------------
+
+
+When to Use Flyweight Design Pattern:
+* Need to create large number of objects.
+* Because of the large number when memory cost is a constraint.
+* When most of the object attributes can be made external and shared.
+* The application must not mandate unique objects, as after implementation same object will be used repeatedly.
+
+
+Example: java.lang.Integer#valueOf(int) (also on Boolean, Byte, Character, Short, Long, Float and Double). 
+API doc says, "...this method is likely to yield significantly better space and time performance by caching frequently 
+requested values....".

@@ -1,0 +1,5 @@
+Singleton Pattern restricts the instantiation of a class and ensures that only one instance of the class exists in java virtual 
+machine. 
+The singleton class must provide a global access point to get the instance of the class.
+Singleton pattern is used for logging, driver objects , caching, and thread pool.
+Singleton Design pattern is also used in other design patterns - Abstract Factory, Builder, Prototype, Facade, etc.

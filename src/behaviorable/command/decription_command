@@ -1,0 +1,12 @@
+Command Design Pattern is known as the behavioural design pattern, which encapsulates a request and an object , 
+thereby letting you parameterize clients with different requests, queue or log requests, support undoable operations
+
+Command declares an interface for all commands, providing a simple execute method which asks the Receiver of the 
+command to carry out an operation. The Receiver has the knowledge of what to do to carry out the request. The Invoker 
+holds a command and get the Command to execute a request by calling the execute method. The Client creates ConcreteCommand 
+and sets a Receiver for the Command. The ConcreteCommand defines a binding between the action and the receiver. 
+When the Invoker calls the execute, the ConcreteCommand will run one or more actions on the Receiver.  
+
+We will look at a real life scenario where we can implement Command pattern. Let’s say we want to provide a File System utility 
+with methods to open, write and close file. To implement our File System utility, first of all we need to create the receiver 
+classes that will actually do all the work.

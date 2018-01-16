@@ -1,0 +1,27 @@
+Observer Pattern is one of the behavioral design pattern. 
+
+Observer design pattern is useful when you are interested in the state of the object and want to egt notified whenever there 
+is a change.
+
+Subject - the object being watched
+Observer - the object that watch on the state of another object
+
+Define a one-to-many dependency between objects so that one object changes state, all its dependents are notified and 
+updated automatically.
+
+Subject contains a list of observers to notify any change in its state, so it should provide methods using 
+which observers can register or unregister themselves. Subject can also conatin a method to notify all the observers of any change
+and either it can send the update while notifying the observer.
+
+Observer should have a method  to set the object to watch  and another method that will be used by Subject to 
+notify them of any updates.
+
+The Observer pattern provides an object design where subjects and observers  are loosely coupled:
+1. The only thing the subject knows about an observer is that it implements a certain interface (Observer Interface).
+2. We can add new observers at any time.
+3. We never need to modify the subject to add new types of observers.
+4. We can reuse subjects and observers independently oif each other.
+5. Changes to either the subject or an observer will not effect the other.
+
+Design Principles:
+1. Strive for loosely coupled objects

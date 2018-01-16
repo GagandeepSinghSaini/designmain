@@ -1,0 +1,14 @@
+Facade pattern hides the complexities of the system and provides an interface to the client using which the client 
+can access the system. This pattern involves a single class which provides simplified methods required by 
+client and delegates calls to methods of existing system classes.
+
+Provide a unified interface to a set of interfaces in a subsystem. Façade defines a higher-level interface that makes 
+the subsystem easier to use.
+
+Facades are all around us in the real world.  Operating systems are one such example - 
+you don't see all the inner workings of your computer, but the OS provides a simplified interface to use the machine. 
+
+When to Use Facade Design Pattern:
+As the concept behind facade is to simplify an interface, service oriented architectures make use of the facade pattern. 
+For example, in web services, one web service might provide access to a number of smaller services that have been hidden 
+from the caller by the facade.

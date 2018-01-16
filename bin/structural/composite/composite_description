@@ -1,0 +1,14 @@
+Composite design pattern allows you to have a tree structure and ask each node in the tree structure to perform a task.
+Example: organization
+It have general managers and under general managers, there can be managers and  under managers there can be developers.
+
+"Compose objects into tree structure to represent part-whole hierarchies.Composite lets client treat individual objects 
+and compositions of objects uniformly".
+
+Composite design pattern treats each node in two ways-Composite or leaf.Composite means it can have other objects below it.
+leaf means it has no objects below it.
+
+When to use:
+--> you want to represent part-whole hierachies of objects.
+--> you want client to be able to ignore difference between compositions of objects and individual objects.Clients will treat all 
+objects in the composite structure uniformly.

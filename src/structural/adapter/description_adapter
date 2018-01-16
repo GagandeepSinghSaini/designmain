@@ -1,0 +1,16 @@
+The Adapter Design Pattern converts the interface of a class into another interface clients expect. Adapter lets classes work 
+together that couldn't otherwise because of incompatible interfaces.
+
+Adapter pattern works as a bridge between two incompatible interfaces. This type of design pattern comes under structural pattern 
+as this pattern combines the capability of two independent interfaces.
+
+This pattern involves a single class which is responsible to join functionalities of independent or incompatible interfaces.
+A real life example could be a case of card reader which acts as an adapter between memory card and a laptop.
+
+
+Two kinds of adapter:
+Class Adapter uses inheritance and can only wrap a class. It cannot wrap an interface since by definition it must derive from 
+some base class.
+
+Object Adapter uses composition and can wrap classes or interfaces, or both. It can do this since it contains, as a private, 
+encapsulated member, the class or interface object instance it wraps.
