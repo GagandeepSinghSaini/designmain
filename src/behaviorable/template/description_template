@@ -1,0 +1,16 @@
+Template Design Pattern: The template design pattern is used when two or more implementations of a similar algorithms exists.
+Example: A basiv house plan can have many variations such as adding  and extensions or using a different heating system.
+
+Defines an skeleton of an algorithm in a method, making some steps to subclasses. Template Method  lets subclasses redefine certain
+steps of an algorithm without changing the algorithms structure.
+
+-> The Abstract Class contains the template method, which should be made final so that it cannot be overridden.
+The different types of method in abstract parent class:
+1. Abstarct Method: The parent class contains these empty methods (no implementation methods), which the subclasses need to 
+   implement.
+2. Concrete Method: Standard complete methods that are useful to the subclasses.
+3. Hook Method: Methods conatining a default implementation that my be overridden in subclasses.
+4. Template Method: A method that calls any of the methods listed above in order to describe the algorithm without needing to 
+   implement the details.
+
+-> The Concrete class implements all the operations required by the templateMethod that were defined as abstract in the parent class.  
