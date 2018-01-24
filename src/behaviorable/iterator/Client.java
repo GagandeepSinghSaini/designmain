@@ -9,23 +9,23 @@ public class Client {
 		String[] stringarray = {"A","B","C"};
 		Container container = new ContainerImpl();
 		IIterator iter = container.getIterator(stringarray);
-		while(iter.hasNext()) {
-			String name = (String)iter.next();
-	         System.out.println("-> : " + name);
-		}
+		display(iter);
 		
 		List<String> list = new ArrayList<>();
 		list.add("1");
 		list.add("2");
 		list.add("3");
 		list.add("4");
-		
 		iter = container.getIterator(list);
+		display(iter);
+		
+	}
+	
+	public static void display(IIterator iter) {
 		while(iter.hasNext()) {
 			String name = (String)iter.next();
 	         System.out.println("-> : " + name);
 		}
-		
 	}
 	
 	
