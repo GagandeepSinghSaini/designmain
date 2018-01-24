@@ -1,6 +1,6 @@
 package structural.composite;
 
-public class Manager implements Employee {
+public class Manager implements IEmployee {
 
 	private String name;
 	private String empId;
