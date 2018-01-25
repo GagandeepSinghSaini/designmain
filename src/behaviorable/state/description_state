@@ -1,0 +1,20 @@
+State Design Pattern: It allows an object to alter the behavior when its internal state changes.
+It comes under behavior design patterns.
+
+Example: Traffic Lights - Green Light (Move state of the vehicle), Yellow (warns that the signal is about to change), 
+Red (Stop state of vehicles)
+Here, object changes its behavior at runtime and if we need to code this without using conditional statements, then state pattern 
+is a good choice as this pattern allows an objetc to alter its behavior, when its internal state changes.  
+ 
+Implementation:
+IState - Abstraction for 3 states (display current state, change current state) - GreenState, RedState, YellowState
+IReciever  -  What will be at recieving end (on or off lights) - GreenLight, RedLight, YellowLight
+TrafficSystem - It is the context class (as it will have references to all the three states along with initial and current state)
+
+We have three states green,yellow and red each of which is composed of the TrafficSystem and Reciever objects . 
+TrafficSystem is the context class here and which has a reference to all the different states along with the current state. 
+When a client calls change state we will be getting the current state from the TrafficSystem class and setting it to the next 
+state in the flow. Reciever class is just an abstraction which actually talks to the GreenLight,RedLight and YellowLight device 
+for switching it on and off. We also have an state called as previous state which we will be using to store the previous state 
+of the system before changing the state in the Red and Green state so that we will know which state to set in the Yellow state 
+based on the previous state as Yellow state is a common state of transition between the green and red.
