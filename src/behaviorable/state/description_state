@@ -18,3 +18,22 @@ state in the flow. Reciever class is just an abstraction which actually talks to
 for switching it on and off. We also have an state called as previous state which we will be using to store the previous state 
 of the system before changing the state in the Red and Green state so that we will know which state to set in the Yellow state 
 based on the previous state as Yellow state is a common state of transition between the green and red.
+
+Similarities between State Design Pattern and Strategy Design Pattern:
+1. Both State and Strategy Pattern makes it easy to add new state and strategy, without affecting Context object, which uses them.
+2. Just like Context object is started with a initial state in State design Pattern, a Context object also has a default strategy 
+   in case of Strategy pattern in Java.
+3. State pattern wraps different behaviour in form of different State object, while Strategy pattern wraps different behaviour in 
+   form of different Strategy object
+4. Both Strategy and State Patterns relies on sub classes to implement behaviour. Every concrete strategy extends from an Abstract
+   Strategy, each State is sub class of interface or abstract class used to represent State.
+
+Differences between State Design Pattern and Strategy Design Pattern:
+1. Another difference between State and Strategy Patten is that, State encapsulate state of an Object, while Strategy Pattern 
+   encapsulate an algorithm or strategy. Since states are cohesively associated with object, it can not be reused, but by 
+   separating strategy or algorithm from it's context, we can make them reusable.
+2. Here in Strategy design pattern, we allocate the strategy in the context class, but in State design pattern, the different states
+   do the state transition, (not done by Context class).  
+3. In State design pattern, we have initial state always. But in Strategy, we allocate the strategy in context class.
+  
+
