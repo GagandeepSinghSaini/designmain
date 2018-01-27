@@ -1,0 +1,10 @@
+Proxy Design Pattern: Allows for object level access control by acting as a pass through 
+entity or a placeholder object.
+Example: Credit Card/ Debit Card are the proxy objects for banks
+ 
+
+Types of Proxy:-
+1. Remote Proxy: accessing remote service
+2. Virtual Proxy: controls access to resource that is expensive to create [Cache]
+3. Protection Proxy: To control access to the application
+
