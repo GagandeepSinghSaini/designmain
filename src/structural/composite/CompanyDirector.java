@@ -3,22 +3,22 @@ package structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompanyDirector implements Employee {
+public class CompanyDirector implements IEmployee {
 
-	List<Employee> 	employeeList = new ArrayList<Employee>();
+	List<IEmployee> employeeList = new ArrayList<>();
 	
 	@Override
 	public void employeeDetails() {
-		for(Employee emp: employeeList) {
+		for(IEmployee emp: employeeList) {
 			emp.employeeDetails();
 		}
 	}
 	
-	public void removeEmployee(Employee emp) {
+	public void removeEmployee(IEmployee emp) {
 		employeeList.remove(emp);
 	}
 	
-	public void addEmployee(Employee emp) {
+	public void addEmployee(IEmployee emp) {
 		employeeList.add(emp);
 	}
 

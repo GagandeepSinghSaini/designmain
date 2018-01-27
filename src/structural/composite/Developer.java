@@ -1,6 +1,6 @@
 package structural.composite;
 
-public class Developer implements Employee{
+public class Developer implements IEmployee{
 
 	private String name;
 	private String empId;

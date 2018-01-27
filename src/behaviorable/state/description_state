@@ -1,0 +1,39 @@
+State Design Pattern: It allows an object to alter the behavior when its internal state changes.
+It comes under behavior design patterns.
+
+Example: Traffic Lights - Green Light (Move state of the vehicle), Yellow (warns that the signal is about to change), 
+Red (Stop state of vehicles)
+Here, object changes its behavior at runtime and if we need to code this without using conditional statements, then state pattern 
+is a good choice as this pattern allows an objetc to alter its behavior, when its internal state changes.  
+ 
+Implementation:
+IState - Abstraction for 3 states (display current state, change current state) - GreenState, RedState, YellowState
+IReciever  -  What will be at recieving end (on or off lights) - GreenLight, RedLight, YellowLight
+TrafficSystem - It is the context class (as it will have references to all the three states along with initial and current state)
+
+We have three states green,yellow and red each of which is composed of the TrafficSystem and Reciever objects . 
+TrafficSystem is the context class here and which has a reference to all the different states along with the current state. 
+When a client calls change state we will be getting the current state from the TrafficSystem class and setting it to the next 
+state in the flow. Reciever class is just an abstraction which actually talks to the GreenLight,RedLight and YellowLight device 
+for switching it on and off. We also have an state called as previous state which we will be using to store the previous state 
+of the system before changing the state in the Red and Green state so that we will know which state to set in the Yellow state 
+based on the previous state as Yellow state is a common state of transition between the green and red.
+
+Similarities between State Design Pattern and Strategy Design Pattern:
+1. Both State and Strategy Pattern makes it easy to add new state and strategy, without affecting Context object, which uses them.
+2. Just like Context object is started with a initial state in State design Pattern, a Context object also has a default strategy 
+   in case of Strategy pattern in Java.
+3. State pattern wraps different behaviour in form of different State object, while Strategy pattern wraps different behaviour in 
+   form of different Strategy object
+4. Both Strategy and State Patterns relies on sub classes to implement behaviour. Every concrete strategy extends from an Abstract
+   Strategy, each State is sub class of interface or abstract class used to represent State.
+
+Differences between State Design Pattern and Strategy Design Pattern:
+1. Another difference between State and Strategy Patten is that, State encapsulate state of an Object, while Strategy Pattern 
+   encapsulate an algorithm or strategy. Since states are cohesively associated with object, it can not be reused, but by 
+   separating strategy or algorithm from it's context, we can make them reusable.
+2. Here in Strategy design pattern, we allocate the strategy in the context class, but in State design pattern, the different states
+   do the state transition, (not done by Context class).  
+3. In State design pattern, we have initial state always. But in Strategy, we allocate the strategy in context class.
+  
+
